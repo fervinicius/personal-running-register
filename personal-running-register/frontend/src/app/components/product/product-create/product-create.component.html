@@ -1,0 +1,28 @@
+<mat-card>
+   <mat-card-title>New Sport</mat-card-title>
+   <form>
+      <mat-form-field>
+         <input matInput [(ngModel)]="sport.name" [ngModelOptions]="{standalone: true}"
+          placeholder="Name" name="name">
+      </mat-form-field>
+      <mat-form-field>
+         <input matInput [(ngModel)]="sport.distance" [ngModelOptions]="{standalone: true}" placeholder="Distance" name="distance">
+      </mat-form-field>
+      <mat-form-field>
+         <input matInput [(ngModel)]="sport.time" [ngModelOptions]="{standalone: true}"
+          placeholder="Time" name="time">
+      </mat-form-field>
+      <mat-form-field>
+         <input type="number" matInput [(ngModel)]="sport.pace" [ngModelOptions]="{standalone: true}"
+          placeholder="Pace" name-="pace">
+      </mat-form-field>
+   </form>
+
+   <button mat-raised-button (click)="createProduct()">
+      Save
+   </button>
+   
+   <button mat-raised-button (click)="cancelProduct()">
+      Cancel
+   </button>  
+</mat-card>

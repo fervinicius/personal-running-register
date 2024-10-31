@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Classes criadas para o footer.component.html */
+.red {   
+   color: rgb(220, 43, 43); 
+}
+
+.gray {
+   color: rgb(201, 196, 196);
+}
+
+.v-middle {
+   vertical-align: middle;
+}
